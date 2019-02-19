@@ -18,6 +18,15 @@ namespace PadawansTask4
         //}
         public static int GetVowelCount(string str)
         {
+            if (str is null)
+            {
+                throw new ArgumentNullException();
+            }
+            if (string.IsNullOrEmpty(str))
+            {
+
+                throw new ArgumentNullException();
+            }
             int count = 0;
             //str = Console.ReadLine();
             for (int i = 0; i < str.Length; i++)
